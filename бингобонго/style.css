@@ -1,0 +1,729 @@
+@font-face {
+  font-family: "Rubik";
+  font-weight: 300;
+  src: url("./fonts/Rubik-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 500;
+  src: url("./fonts/Rubik-Light.ttf");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 700;
+  src: url("./fonts/Rubik-Medium.ttf");
+}
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+span {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+ul {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+
+body {
+  font-family: "Rubik";
+  background-color: #f0f0eb;
+}
+
+a {
+  color: black;
+}
+
+header {
+  height: 600px;
+  /* width: 1200px; */
+  width: 100%;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  background-color: #e7e2dc;
+  margin-top: auto;
+  margin: auto;
+}
+
+header .Logo {
+  margin-left: 80px;
+  width: 80px;
+}
+
+header .line {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 30px 22px 30px;
+  align-items: center;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-family: "Rubik";
+  font-weight: 500;
+}
+
+.right_icon {
+  display: flex;
+  gap: 30px;
+  margin-right: 120px;
+}
+
+.content_h {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+  background-image: url("./img/waves.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  text-align: center;
+  gap: 20px;
+}
+
+.text_h {
+  font-weight: 700;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.text_h span {
+  color: rgb(44, 197, 197);
+}
+
+.descrip_h {
+  font-weight: 300;
+}
+
+.catalog_h {
+  margin-top: 50px;
+  border-radius: 10px;
+  padding: 15px 30px 15px 30px;
+  background-color: rgb(255, 90, 23);
+  color: white;
+  font-weight: 300;
+  border: 0;
+  font-family: "Rubik";
+}
+
+.star_h {
+  width: 120px;
+  position: absolute;
+  top: 37%;
+  left: 0;
+}
+
+.flower_h {
+  width: 120px;
+  position: absolute;
+  top: 15%;
+  right: 0;
+}
+
+/* MAIN CONTENT */
+main {
+  width: 100%;
+  margin: auto;
+  background-color: white;
+}
+
+.about-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 100px 90px 100px 90px;
+  align-items: end;
+  gap: 90px;
+}
+
+.about-div__text h2 {
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+
+.about-div__text {
+  /* width: 100%; */
+  max-width: 600px;
+  font-weight: 300;
+  /* margin: 0px; */
+}
+
+.about-div__img {
+  width: 100%;
+  max-width: 450px;
+  /* margin-right: 150px; */
+  /* height: 400px; */
+}
+
+/* @media (max-width: 1200) {
+ 
+} */
+
+.about-div__cards {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 35px;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.cards__card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: space-between;
+  gap: 10px;
+  min-height: fit-content;
+  height: fit-content;
+  max-width: 280px;
+  padding: 32px;
+  border-radius: 60px;
+}
+
+.cards__card p {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.cards__card h3 {
+  font-size: 23px;
+}
+
+.cards__card img {
+  /* width: 100px; */
+  height: 180px;
+  display: block;
+  margin: 0 auto;
+}
+
+.card-1 {
+  background-color: #fae7f3;
+  /* margin-left: 300px; */
+}
+
+.card-2 {
+  background-color: #e7fafa;
+}
+
+.card-3 {
+  background-color: #fcf3da;
+}
+
+/* BINGO BONGO */
+
+.bingo-bongo {
+  display: flex;
+  margin-top: 50px;
+  background-color: #e4e2e0;
+  border-radius: 140px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.bingo-bongo__description{
+  padding: 100px 0px ;
+  font-family: "Rubik";
+  /* font-weight: 900; */
+}
+
+
+.pp {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.bingo {
+  display: flex;
+  justify-content: center;
+}
+
+.advantages_item_list{
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.advantages_item_list p{
+  position: absolute;
+}
+
+
+.up{
+  top: 0px;
+  left: 0px;
+  margin: 35px 40px;
+}
+.down{
+  top: 0px;
+  left: 0px;
+  margin: 62px 47px;
+
+}
+
+
+
+/* FAVORITE GAMES */
+
+.favorite-games {
+  margin-top: 50px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 100px;
+}
+
+.favorite-games h2 {
+  text-transform: uppercase;
+  /* max-width: 00px */
+  max-width: 600px;
+  width: 100%;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.favorite-games__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.favorite-games__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4e2e0;
+}
+
+.favorite-games__card {
+  overflow: hidden;
+}
+
+/* SALE */
+
+.sale-50 {
+  position: absolute;
+  z-index: 1;
+  left: 50px;
+  top: 50px;
+}
+
+.sale-cont {
+  height: 500px;
+
+  position: relative;
+  background-image: url("./img/photo.png");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 100%; */
+
+
+  /* padding-left:200px;
+    padding-top:100px; */
+  /* background-image: url('./media/img/photo.png'); */
+}
+.sale-cont__desc {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  gap: 10px;
+  position: absolute;
+  left: 200px;
+  top: 100px;
+}
+
+.sale-cont__desc {
+  /* font-weight: 500; */
+  /* z-index: 5; */
+}
+.sale-cont__desc button {
+  width: fit-content;
+}
+.sale-cont h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+.sale-50 {
+  position: absolute;
+  left: -150px;
+  top: -50px;
+}
+.sale-50 img {
+  object-fit: cover;
+}
+
+.sale-50 span {
+  display: block;
+  z-index: 5;
+  position: absolute;
+  left: 35px;
+  top: 45px;
+  font-size: 17px;
+  transform: rotate(-28deg);
+  color: rgb(35, 180, 180);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* GAME OF MONTH */
+
+.month-game {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-top: 150px;
+}
+.month-game__left {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: fit-content;
+}
+.month-game__left p {
+  font-weight: 300;
+}
+
+.month-game__select {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  border-radius: 15px;
+  background-color: #e4e2e0;
+  padding: 5px;
+}
+.select__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: fit-content;
+  padding: 10px 35px 10px 35px;
+  border-radius: 15px;
+}
+
+.select_active {
+  background-color: #f5d467;
+}
+.month-game__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.month-game__right__header {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.month-game__right__header .label-cont {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: #e1fafc;
+  border-radius: 15px;
+  padding: 10px 20px 10px 20px;
+}
+
+.month-game__right__header .label-cont img {
+  width: 25px;
+}
+
+.month-game__right__header .rating-cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.month-game__rating-cont_img {
+  width: 20px;
+}
+
+.month-game__right h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.month-game__right p {
+  margin-top: 15px;
+  font-weight: 300;
+}
+
+.month-game__right .game-specs-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.month-game__right .game-specs-cont .spec-cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.game-ordering-cont {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.game-ordering-cont__price {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.to-cart_btn {
+  padding: 15px 25px 15px 25px;
+  border-radius: 15px;
+  border: none;
+  background-color: #ff6118;
+  color: white;
+  font-weight: 500;
+  font-family: "Rubik";
+}
+
+.form-section {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  padding-left: 70px;
+  padding-right: 70px;
+  /* background-color: #e7e2dc; */
+  padding-top: 200px;
+  display: flex;
+  gap: 150px;
+  flex-direction: row;
+  background-color: #f0f0eb;
+  flex-wrap: wrap;
+  /* height: fit-content; */
+  background-image: url("./media/img/waves_footer.png");
+  /* background-color: #f0f0eb; */
+  background-repeat: no-repeat;
+}
+
+.form-seciton__left {
+  display: flex;
+  flex-direction: column;
+  /* align-items:center; */
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 540px;
+}
+
+.form-seciton__left h2 {
+  text-transform: uppercase;
+  font-size: 70px;
+}
+
+.form-seciton__left p {
+  font-weight: 300;
+}
+
+.form-shapes-cont {
+  position: relative;
+}
+.form-shapes-cont__shape {
+  position: absolute;
+}
+
+.form-shapes-cont span {
+  position: absolute;
+  font-size: 20px;
+}
+
+.form-seciton__right {
+  flex-wrap: wrap;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  padding-top: 200px;
+}
+.input-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input-cont span {
+  color: rgb(131, 131, 131);
+  font-weight: 300;
+}
+.input-cont input {
+  background-color: #f0f0eb;
+  border: 1px solid rgb(168, 168, 168);
+  border-radius: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  padding: 20px 20px 20px 20px;
+}
+
+.choose-lvl-span {
+  font-weight: 300;
+}
+.difficult-levels-cont {
+  font-weight: 300;
+}
+
+.difficult-levels-cont fieldset {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border: none;
+}
+.difficult-levels-cont fieldset input {
+  height: 19px;
+  width: 19px;
+  background-color: #e7e2dc;
+  margin: 0;
+  padding: 0;
+}
+
+.difficult-lvl-cont input::before {
+  background: black;
+}
+
+.difficult-lvl-cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.personal-data-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  font-weight: 300;
+}
+
+.personal-data-cont input {
+  height: 19px;
+  width: 19px;
+  border-radius: 25px;
+}
+.buy-ticket-btn {
+  padding: 17px 25px 17px 25px;
+  border-radius: 15px;
+  border: none;
+  background-color: #ff6118;
+  color: white;
+  font-weight: 500;
+  font-family: "Rubik";
+  width: 200px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+  margin-top: 150px;
+  height: 150px;
+  background-color: #dfd9d2;
+  /* width: 1200px; */
+  margin: auto;
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  justify-content:  center;
+  flex-wrap: wrap;
+  align-items: center;
+  font-weight: 300;
+}
+footer a {
+  text-decoration: underline;
+}
+
+footer .icons-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+.bingo {
+  font-size: 50px;
+  font-weight: 11 00;
+}
+
+@media (max-width: 1200px) {
+  .star_h {
+    display: none;
+  }
+  .flower_h {
+    display: none;
+  }
+  .about-div__img {
+    width: 350px;
+  }
+  .month-game{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:700px) {
+
+}
